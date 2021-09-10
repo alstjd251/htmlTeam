@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: 150px;
+  z-index: 2;
+}
+header .fheader {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  background-color: rgb(192, 129, 91);
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 5px solid brown;
+}
+header .fheader .logo {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+}
+header .fheader .logo a img {
+  position: absolute;
+  width: 210px;
+  height: 82px;
+  margin: 5px;
+}
+header .fheader .menulogin {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+.fheader .menulogin .menu {
+  font-size: 1.3em;
+  font-family: "Sunflower", cursive;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.fheader .menulogin .menu a {
+  width: 130px;
+  text-decoration: none;
+  color: #fffff0;
+}
+.fheader .menulogin .login {
+  font-size: 0.8em;
+  width: 95%;
+  height: 20px;
+  text-align: right;
+}
+.fheader .login a {
+  text-decoration: none;
+  color: lightgray;
+}
+header .hidescroll {
+  font-family: "Sunflower", cursive;
+  height: 170px;
+  top: 100px;
+  position: fixed;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(192, 129, 91);
+  border-bottom: 5px solid brown;
+  display: flex;
+}
+header .hidescroll .hidelogo {
+  width: 200px;
+  height: 170px;
+  position: absolute;
+  background-color: rgb(192, 129, 91);
+}
+.hidescroll .hidemenu {
+  width: 100%;
+  margin-left: 200px;
+  display: flex;
+  height: 170px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.hidehome,
+.hideshel,
+.hidecomm {
+  display: flex;
+  flex-direction: column;
+}
+.hidehome a,
+.hideshel a,
+.hidecomm a {
+  width: 130px;
+  padding-top: 10px;
+  text-decoration: none;
+  color: #fffff0;
+}
+aside {
+  width: 10%;
+  height: 80%;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 80%;
+}
+section .js_container,
+section .js_container1,
+section .js_container2,
+section .js_container3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.js_item {
+  width: 300px;
+  height: 300px;
+  border: 1px solid lightgray;
+}
+.js_item img {
+  width: 300px;
+  height: 300px;
+}
+.jw_butsearch {
+  position: fixed;
+  font-size: 10px;
+  border: 1px solid rgb(151, 142, 113);
+  padding-bottom: 5px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  right: 24px;
+  bottom: 20%;
+  z-index: 100;
+  cursor: pointer;
+}
+.jw_butchat {
+  position: fixed;
+  font-size: 10px;
+  border: 1px solid rgb(151, 142, 113);
+  padding-bottom: 5px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  right: 24px;
+  bottom: 30%;
+  z-index: 100;
+  cursor: pointer;
+}
+.jw_buttop {
+  position: fixed;
+  font-size: 25px;
+  border: 1px solid rgb(151, 142, 113);
+  padding-bottom: 5px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  right: 24px;
+  bottom: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
+footer {
+  margin-top: 2em;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+footer #ms_co {
+  font-family: "Sunflower", cursive;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+/* 여기부터 로그인 */
+
+#be_login_modal {
+  display: none;
+}
+
+#be_login_modal .be_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* 로그인 부분 */
+.be_login {
+  /* margin: 100px auto; */
+  width: 300px;
+}
+.be_login-screen {
+  background-color: #cfc1b6;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.be_login-title {
+  text-align: center;
+  color: #777;
+}
+
+.be_login-form {
+  text-align: center;
+}
+.be_control-group {
+  margin-bottom: 10px;
+}
+
+.be_login input {
+  text-align: center;
+  background-color: #eac7a1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border 0.5s;
+}
+
+.be_login input:focus {
+  border: 2px solid #ad7954;
+  box-shadow: none;
+}
+
+.be_login .btn {
+  border: 2px solid transparent;
+  background: #ad7954;
+  color: #444;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.be_login .btn:hover {
+  background-color: #eac7a1;
+}
+
+.be_login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+}
+
+.be_close_btn:hover {
+  cursor: pointer;
+}
+/* 여기까지 로그인 */
