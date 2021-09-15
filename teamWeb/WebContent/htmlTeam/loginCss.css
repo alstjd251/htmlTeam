@@ -1,0 +1,84 @@
+        /* 여기부터 로그인 */
+        
+        #be_login_modal {
+            display: none;
+        }
+
+        #be_login_modal .be_close_btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* 로그인 부분 */
+        .be_login {
+        /* margin: 100px auto; */
+        width: 300px;
+        }
+        .be_login-screen {
+            background-color: #cfc1b6;
+            padding: 20px;
+            border-radius: 5px
+        }
+
+        .be_login-title {
+            text-align: center;
+            color: #777;
+        }
+
+        .be_login-form {
+            text-align: center;
+        }
+        .be_control-group {
+            margin-bottom: 10px;
+        }
+
+        .be_login input {
+            text-align: center;
+            background-color: #EAC7A1;
+            border: 2px solid transparent;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 10px 0;
+            width: 250px;
+            transition: border .5s;
+        }
+
+        .be_login input:focus {
+            border: 2px solid #AD7954;
+            box-shadow: none;
+        }
+
+        .be_login .btn {
+            border: 2px solid transparent;
+            background: #AD7954;
+            color: #444;
+            font-size: 16px;
+            line-height: 25px;
+            padding: 10px 0;
+            text-decoration: none;
+            text-shadow: none;
+            border-radius: 3px;
+            box-shadow: none;
+            transition: 0.25s;
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        .be_login .btn:hover {
+            background-color: #EAC7A1;
+        }
+
+        .be_login-link {
+            font-size: 12px;
+            color: #444;
+            display: block;
+            margin-top: 12px;
+        }
+
+        .be_close_btn:hover{
+            cursor:pointer;
+        }
+    /* 여기까지 로그인 */

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+	href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&family=Sunflower:wght@300;500;700&display=swap"
+	rel="stylesheet"
+    />
+    <link rel="stylesheet" href="teamCss.css?after" />
+    <link rel="stylesheet" href="pj_style.css?after" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Pet it Pet</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 여기부터 로그인 -->
+    <div id="be_login_modal">
+        <div class="be_login">
+            <div class="be_login-screen">
+                <div class="be_login-title">
+                    <div><a class="be_close_btn">닫기</a></div>
+                    <h1>로그인 </h1>
+                </div>
+                <div class="be_login-form">
+                    <div class="be_control-group">
+                    <input type="text" class="login-field" value="" placeholder="아이디" id="login-name">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+                    <div class="be_control-group">
+                    <input type="password" class="login-field" value="" placeholder="비밀번호" id="login-pass">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+                    <a class="btn btn-primary btn-large btn-block" href="#">로그인</a>
+                    <a class="be_login-link" href="#">아이디 찾기</a>
+                    <a class="be_login-link" href="#">비밀번호 찾기</a>
+                    <a class="be_login-link" href="#">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 여기까지 로그인 -->
+    <header>
+    <div class="fheader">
+        <div class="logo">
+        <a href="file:///C:/Users/%EB%AA%A8/Documents/teamHTML.html">
+            <img src="https://postfiles.pstatic.net/MjAyMTA5MDhfMjQg/MDAxNjMxMDkxMTM0NjY5.2Han3TSOfF1DXy0qnsAJWuvLN8w6faWVxa-h9wJNBU0g.02Nl9aREoInEJ2Jou2K1FKk_Y6wQ5CW5izOkdQnYIYEg.PNG.jbbllee/loge.png?type=w773"/>
+        </a>
+        </div>
+        <div class="menulogin">
+            <div class="login">
+                <!--이미지로 교체 가능-->
+                <a href="#" id="popup_open_btn">login</a>
+            </div>
+            <div class="menu">
+                <a href="#">홈</a>
+                <a href="#">보호소</a>
+                <a href="#">커뮤니티</a>
+            </div>
+        </div>
+    </div>
+    <!--onmouseover jquery slide-->
+    <div class="hidescroll">
+        <div class="hidelogo"></div>
+        <div class="hidemenu">
+            <div class="hidehome">
+                <a href="file:///C:/Users/%EB%AA%A8/Documents/introPage.html">기관 소개</a>
+                <a href="file:///C:/Users/%EB%AA%A8/Documents/conect.html">입양 절차</a>
+                <a href="#">공지사항</a>
+            </div>
+            <div class="hideshel">
+                <a href="#">보호동물</a>
+            </div>
+            <div class="hidecomm">
+                <a href="#">입양홍보</a>
+                <a href="#">요청게시판</a>
+                <a href="#">연계병원 찾기</a>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <section>
+      <div class="pj_container">
+        <div class="pj_card">
+            <div class="pj_imgBx">
+                <img src="https://postfiles.pstatic.net/MjAyMTA5MDhfMjUy/MDAxNjMxMDkwNzA3NDY4.bo7XKwTx7dod-ffLsReXX7HXIkoTFSQRaKAfSsyYRREg.sZfLu0XdFq1Kpkeje7itZjPhOtmbq3cTWgLKJoYhpvsg.JPEG.jbbllee/img_03.jpg?type=w773">
+            </div>
+            <div class="pj_content">
+                <div>
+                    <h3>햄스터</h3>
+                    <p>간식을 가득 보관하느라 빵빵해진 볼<br>
+                        짧은 꼬리가 매력적인 엉덩이<br>
+                        세상에 저 보다 귀여운 생물 보셨나요?</p>
+                    <a href="#">입양 문의</a>
+                </div>
+            </div>
+        </div>
+        <div class="pj_card2">
+            <div class="pj_content">
+                <div>
+                    <h3>보호동물 정보</h3>
+                    <p>
+                        <span class="pj_content1">공고번호:</span> 서울-2021-00424<br>
+                        <span class="pj_content1">품종:</span> [고양이] 한국 고양이<br>
+                        <span class="pj_content1">성별:</span> 암컷<br>
+                        <span class="pj_content1">나이/체중:</span> 2021 (년생)/0.01 (kg)<br>
+                        <span class="pj_content1">등록일:</span> 2021-09-14<br>
+                        <span class="pj_content1">발견장소:</span> 미성동 체육센터 인근<br>
+                        <span class="pj_content1">특이사항:</span> 여윔, 털 상태 불량
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pj_card3">
+            <div class="pj_content">
+                <div>
+                    <h3>보호센터 정보</h3>
+                    <p>
+                        <span class="pj_content1">관할기관:</span> 관악구청<br>
+                        <span class="pj_content1">상태:</span> 보호중<br>
+                        <span class="pj_content1">보호센터:</span> 러브펫종합동물병원<br>
+                        <span class="pj_content1">보호센터 연락처:</span> 02-837-8875<br>
+                        <span class="pj_content1">보호장소:</span> 서울특별시 관악구 남부순환로 1429<br>
+                        <a id="pj_map" href="#">Map</a>
+                        <!--지도를 보여줄건지, 보호소 홈페이지를 보여줄건지 둘다? -->
+                        <a id="pj_home" href="#">홈페이지</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="ms_adiv">
+        <aside>
+            <!-- 채팅 시스템 레이아웃 시작 -->
+            <input class="jw_butchat" type="button" value="chat system" onclick="chat()" />
+            <!--  -->
+            <div class="jw_chat" style="visibility: hidden;" onclick="chat()">
+                <div class="jw_chattop">
+                    <div class="jw_chath">
+                    <p>문의 및 방문예약</p>
+                    </div>
+                    <input type="button" class="jw_chatout" onclick="chat()" value="X">
+                </div>
+                <div class="jw_chatsec">
+
+                </div>
+                <div class="jw_text">
+                    <div class="jw_intext"><input type="text" class="jw_intext1" placeholder="문의사항 입력"></div>
+                    <input type="submit" class="jw_inchat" value="전송">
+                </div>
+            </div>
+            <!-- 채팅 시스템 레이아웃 끝 -->
+            <!--실시간 상담 및 문의사항 채팅하는 아이콘-->
+            <input class="jw_buttop" type="button" onclick="jw_goTop()" value="↑" />
+        </aside>
+    </div>
+    <footer>
+        <div>
+            <p id="ms_co">솔데스크 주소 : 서울특별시 종로구 관철동 13-13 1014호</p>
+            <p id="ms_co">문의 전화 : 02-1014-1014</p>
+            <p id="ms_co">상담 가능 시간 : 평일 09:00 ~ 18:00</p>
+            <p id="ms_co">© Shin Jiwon. All rights reserved. 2021</p>
+        </div>
+    </footer>
+<script>
+    /* 상단으로 가기 */
+    function jw_goTop() {
+        var n = window.scrollY;
+        var t = setInterval(function () {
+            n -= 20;
+            window.scrollTo(0, n);
+            if (n <= 0) {
+                clearInterval(t);
+            }
+        }, 1);
+    }
+    /* 헤더 메뉴바 */
+    window.onload=function(){
+        $(".hidescroll").hide();
+        /* 채팅 시스템 */
+        var jw_butchat = document.querySelector(".jw_butchat");
+        var jw_chat = document.querySelector(".jw_chat");
+        var jw_chatout = document.querySelector(".jw_chatout");
+        jw_butchat.addEventListener("click",function() {
+            jw_chat.style.visibility = "visible";
+            jw_butchat.style.visibility = "hidden";
+        });
+        jw_chatout.addEventListener("click", function() {
+            jw_butchat.style.visibility = "visible";
+            jw_chat.style.visibility = "hidden";
+        });
+
+    }
+    $(function () {
+        $(".menu").on("mouseenter", function () {
+            $(".hidescroll").stop().slideDown();
+        },);
+        $("header").on("mouseleave", function () {
+            $(".hidescroll").stop().slideUp();
+        });
+    });
+
+    /* 여기부터 로그인 모달 */
+    /* 로그인 모달 창 스크립트 */
+    function modal(id) {
+            var zIndex = 9999;
+            var modal = document.getElementById(id);
+            var m = modal.style.display;
+
+            // 모달 div 뒤에 희끄무레한 레이어
+            var bg = document.createElement('div');
+            bg.setStyle({
+                position: 'fixed',
+                zIndex: zIndex,
+                left: '0px',
+                top: '0px',
+                width: '100%',
+                height: '100%',
+                overflow: 'auto',
+                // 레이어 색갈은 여기서 바꾸면 됨
+                backgroundColor: 'rgba(0,0,0,0.4)'
+            });
+            document.body.append(bg);
+
+            // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+            modal.querySelector('.be_close_btn').addEventListener('click', function() {
+                document.getElementById("login-name").value="";
+                document.getElementById("login-pass").value="";
+                bg.remove();
+                modal.style.display = 'none';
+            });
+            
+            modal.setStyle({
+                position: 'fixed',
+                display: 'block',
+                boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+
+                // 시꺼먼 레이어 보다 한칸 위에 보이기
+                zIndex: zIndex + 1,
+
+                // div center 정렬
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                msTransform: 'translate(-50%, -50%)',
+                webkitTransform: 'translate(-50%, -50%)'
+            });
+        }
+
+        // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+        Element.prototype.setStyle = function(styles) {
+            for (var k in styles) this.style[k] = styles[k];
+            return this;
+        };
+
+        document.getElementById('popup_open_btn').addEventListener('click', function() {
+            // 모달창 띄우기
+            modal('be_login_modal');
+        });
+        /* 여기까지 로그인 모달 */
+</script>
+	</body>
+</html>

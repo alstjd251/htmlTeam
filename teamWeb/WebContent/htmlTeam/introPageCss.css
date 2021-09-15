@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+  }
+  #chi_textColor{
+      color: gray;
+  }
+.chi_inTitle{
+    text-align: center;
+  }
+
+#chi_No01 #chi_no01_01{/* 설명 */
+    vertical-align: bottom; /* 문장 밑으로 붙이기 */
+    text-align: left;
+    border-left : 10px solid wheat;
+
+}
+#chi_No01 #chi_No01_jw {
+    border-left: 10px solid wheat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+
+#chi_No02 #chi_no02_02{/* 설명 */
+    text-align: right;
+    border-right: 10px solid wheat;
+    vertical-align: bottom;
+}
+#chi_No02 #chi_No02_jw {
+  border-right: 10px solid wheat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+#chi_No03 #chi_no03_01{/* 설명 */
+    text-align: left;
+    border-left : 10px solid wheat;
+    vertical-align: bottom;
+}
+#chi_No03 #chi_No03_jw {
+    border-left: 10px solid wheat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+  
+.chi_container01 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .chi_container01 #chi_No01,
+  #chi_No02,
+  #chi_No03 {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+  }
+.chi_inNo2{
+    text-align: center;
+    display: flex;
+}
+.chi_inNo2 #chi_inDiv01{
+    margin-right: 10%;
+    border-radius: 70%;
+}
+.chi_inNo2 #chi_inDiv02{
+    vertical-align: middle;
+}
+
+.chi_inNo3{
+    position: relative;
+    text-align: center;
+    background: radial-gradient(circle, #fff, wheat, #fff);  /* 원형 그라데이션 시작,색,마무리 */
+    padding: 3%;
+}
+.chi_inNo3 #chi_pad{
+    margin-top: 20px;
+}
+.chi_inNo3 #no3_01{
+    width: 200px;
+    height: 300px;
+    border-radius: 70%;
+}
+.chi_inNo3 #no3_02{
+    width: 200px;
+    height: 300px;
+    border-radius: 70%;
+}
+.chi_inNo3 #no3_03{
+    width: 200px;
+    height: 300px;
+    border-radius: 70%;
+}
+.chi_inNo3 #no3_04{
+    width: 200px;
+    height: 300px;
+    border-radius: 70%;
+}
+.chi_inNo3 #no3_05{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border-radius: 70%;
+}
+
+.chi_bottom{
+    padding: 50%;
+}
+.chi_line_center{
+    display: inline-block;
+    text-align: center;
+}
+.chi_line_center img{
+width: 300px;
+height: 100px;
+}
+#chi_inNo4{
+    text-align: center;
+}

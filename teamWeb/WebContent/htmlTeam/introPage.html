@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&family=Sunflower:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="teamCss.css?after" />
+    <link rel="stylesheet" href="loginCss.css?after" />
+    <link rel="stylesheet" href="introPageCss.css?after" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Pet it Pet</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!-- 여기부터 로그인 -->
+    <div id="be_login_modal">
+      <div class="be_login">
+        <div class="be_login-screen">
+          <div class="be_login-title">
+            <div><a class="be_close_btn">닫기</a></div>
+            <h1>로그인</h1>
+          </div>
+          <div class="be_login-form">
+            <div class="be_control-group">
+              <input
+                type="text"
+                class="login-field"
+                value=""
+                placeholder="아이디"
+                id="login-name"
+              />
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+            <div class="be_control-group">
+              <input
+                type="password"
+                class="login-field"
+                value=""
+                placeholder="비밀번호"
+                id="login-pass"
+              />
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
+            <a class="btn btn-primary btn-large btn-block" href="#">로그인</a>
+            <a class="be_login-link" href="#">아이디 찾기</a>
+            <a class="be_login-link" href="#">비밀번호 찾기</a>
+            <a class="be_login-link" href="#">회원가입</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 여기까지 로그인 -->
+    <header>
+      <div class="fheader">
+        <div class="logo">
+          <a href="file:///C:/Users/%EB%AA%A8/Documents/teamHTML.html">
+            <img
+              src="https://postfiles.pstatic.net/MjAyMTA5MDhfMjQg/MDAxNjMxMDkxMTM0NjY5.2Han3TSOfF1DXy0qnsAJWuvLN8w6faWVxa-h9wJNBU0g.02Nl9aREoInEJ2Jou2K1FKk_Y6wQ5CW5izOkdQnYIYEg.PNG.jbbllee/loge.png?type=w773"
+            />
+          </a>
+        </div>
+        <div class="menulogin">
+          <div class="login">
+            <!--이미지로 교체 가능-->
+            <a href="#" id="popup_open_btn">login</a>
+          </div>
+          <div class="menu">
+            <a href="#">홈</a>
+            <a href="#">보호소</a>
+            <a href="#">커뮤니티</a>
+          </div>
+        </div>
+      </div>
+      <!--onmouseover jquery slide-->
+      <div class="hidescroll">
+        <div class="hidelogo"></div>
+        <div class="hidemenu">
+          <div class="hidehome">
+            <a href="file:///C:/Users/%EB%AA%A8/Documents/introPage.html">기관 소개</a>
+            <a href="file:///C:/Users/%EB%AA%A8/Documents/conect.html">입양 절차</a>
+            <a href="#">문의 및 방문예약</a>
+            <a href="#">공지사항</a>
+          </div>
+          <div class="hideshel">
+            <a href="#">보호소 찾기</a>
+          </div>
+          <div class="hidecomm">
+            <a href="#">입양홍보</a>
+            <a href="#">요청게시판</a>
+            <a href="#">연계병원 찾기</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <p class="chi_inTitle">
+        <img
+          src="https://postfiles.pstatic.net/MjAyMTA5MTVfMTk1/MDAxNjMxNjcwMDE4MDY3.UXy-61mU-hPR9FrJC58Wwtfol_WxfJ63kddd0Hv37Xgg.xcGe0zmpkOIPQKJgGt7vMfxqwV4s20x6ZFiE8HPuztQg.PNG.jbbllee/logo1_in.png?type=w773"
+        />
+      </p>
+      <!-- 소개 첫 번째 -->
+      <div class="chi_container01">
+        <div id="chi_No01">
+          <div id="chi_No01_jw">
+            <div id="chi_no01_01">
+              <span>Petit Pet or</span> <br />
+              <span>Pet it Pet!</span> <br />
+
+              petit [péti] :작은, 어린 + pet [pet] : 반려동물<br />
+
+              작고 어린 반려동물들을,<br />
+              따스하게 어루만져줄 분을 찾고있습니다<br />
+            </div>
+          </div>
+
+          <div id="chi_no01_02">
+            <img
+              src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjYg/MDAxNjMxNjcwMDIxNjgx.XBcBEOa4tOWOKMPKbhbnUlFEIgyA7Xk-85t7q6Zbg44g.uM6xtpCt-mXuOR1mI5LgQzib0LEf0rhCDGYK4T6MHcQg.PNG.jbbllee/rabbit_intro.png?type=w773"
+              width="200px"
+              height="200px"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div id="chi_No02">
+          <div id="chi_no02_01">
+            <img
+              src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjI3/MDAxNjMxNjY5OTg5NjE2.M0ltxkK7IRyr2yFHTKbTknHL1d2zX8wkmsn5w_lIdZUg.-J3NpsK4pvBBhiVmv26Kq9_fLiLrZeVNjS-XQPp04Vog.PNG.jbbllee/dog_intro.png?type=w773"
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div id="chi_No02_jw">
+            <div id="chi_no02_02">
+              1. 연계 병원을 통한 건강검진 지원<br />
+              입소와 동시에 1차 검진<br />
+
+              입양 후 건강하고 행복한 생활을 위해<br />
+              입양한 유기동물의 건강검진을 지원하고 있습니다
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div id="chi_No03">
+          <div id="chi_No03_jw">
+            <div id="chi_no03_01">
+              2. 유기동물 정보<br />
+              전국 지자체 284개 동물보호센터<br />
+
+              보호소에 등록된 유기동물의 정보를 확인해보세요<br />
+            </div>
+          </div>
+          <div id="chi_no02_02">
+            <img
+              src="https://postfiles.pstatic.net/MjAyMTA5MTVfNSAg/MDAxNjMxNjY5OTgxMTM0.b95BTGd--lS_h0OXgW-IljR5s_YCIvKDSCa_KfhseUEg.t77Jf4wN7f1JtKaEKLUfjoH8awp84prmpmSOv6rTdbIg.PNG.jbbllee/cat_intro.png?type=w773"
+              width="200px"
+              height="200px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 단락 나누기 용 -->
+      <div class="chi_line_center">
+        <img
+          src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjMg/MDAxNjMxNjcwMDA5NzU1.-wrALunT1Ipn7QbMcUQlp-P-DP5YArdHPr-UrXtoYzog.WDMYiCPwdE1cFvypnKv85RpCGX6mS8ZqaH90KNmBCvog.PNG.jbbllee/line.png?type=w773"
+        />
+      </div>
+
+      <!-- 소개 두 번째 -->
+
+      <div class="chi_inNo2">
+        <div id="chi_inDiv01">
+          <!-- 이미지 -->
+          <img
+            src="https://postfiles.pstatic.net/MjAyMTA5MTVfMzAg/MDAxNjMxNjY5OTk5NDcz._jKLmcT5Xmi4glDPyTQ--BglPNokbLwjUdO01UI97fEg.YI_GBNmp2fTA41DkhSJ7EwO0DDS1jimesgbBwavAETog.JPEG.jbbllee/in_img_01.jpg?type=w773"
+            width="400px"
+            height="600px"
+          />
+        </div>
+        <div id="chi_inDiv02">
+          <div>
+            <!-- 소개글 -->
+            <h2>알고 계실까요?</h2>
+            <br />
+            <h3>“129,219 마리"</h3>
+            <br />
+            <p>
+              2020년 한 해 동안 발생한 유기동물 수,<br />
+              매년 전국적으로 10만 마리 이상의 유기동물들이<br />
+              보호소로 구조되고 있습니다.<br />
+            </p>
+
+            그 중 절반만 입양되고, 나머지는 안타깝게도 다시 가족을 만나지 못하고
+            안락사 되거나 자연사하고 있습니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="chi_line_center">
+        <img
+          src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjMg/MDAxNjMxNjcwMDA5NzU1.-wrALunT1Ipn7QbMcUQlp-P-DP5YArdHPr-UrXtoYzog.WDMYiCPwdE1cFvypnKv85RpCGX6mS8ZqaH90KNmBCvog.PNG.jbbllee/line.png?type=w773"
+        />
+      </div>
+
+      <!-- 소개 세 번째 -->
+      <div class="chi_inNo3">
+        <h3>가족 & 친구</h3>
+        <p id="chi_textColor">생각보다 가까운 곳에서 당신을 기다리고 있어요.</p>
+        <!-- <span><img src="C:/Users/user/Downloads/기관소개3div/3div_01.jpg" id="no3_01"></span> -->
+        <span
+          ><img
+            src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjEz/MDAxNjMxNjY5NzY0NjAy.RwywvVmaLY2AmrNfOTHQX3RA5p3-FvFx1IyXyBgH7JAg.GwCaFGdDhKkAd_Xljl5Bg4jZ-FlbQ8GGfZfqzK4HzpMg.JPEG.jbbllee/3div_02.jpg?type=w773"
+            id="no3_02"
+        /></span>
+        <span
+          ><img
+            src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjY1/MDAxNjMxNjY5Nzc0Nzg1.m_5kdL5N__2gwk9g8QKA5e0u86Iz1phoRyfo25duQKMg.PdhPu_7pMe9qpvSOC-bNMwzDWnxaP5_mpUN7CQW_qJ4g.JPEG.jbbllee/3div_03.jpg?type=w773"
+            id="no3_03"
+        /></span>
+        <span
+          ><img
+            src="https://postfiles.pstatic.net/MjAyMTA5MTVfMTkz/MDAxNjMxNjY5ODc1MTY1.49ighuAzSnniNPpYrdyQre0JhQnQdQJADeUqHrWvxgQg.9ekiBx6ArLhK4OWq1LDjc2QfalpAyPSFhnuXxJr96Q8g.JPEG.jbbllee/3div_04.jpg?type=w773"
+            id="no3_04"
+        /></span>
+        <!-- <span><img src="C:/Users/user/Downloads/기관소개3div/3div_05.jpg" id="no3_05"></span> -->
+      </div>
+
+      <div class="chi_line_center">
+        <img
+          src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjMg/MDAxNjMxNjcwMDA5NzU1.-wrALunT1Ipn7QbMcUQlp-P-DP5YArdHPr-UrXtoYzog.WDMYiCPwdE1cFvypnKv85RpCGX6mS8ZqaH90KNmBCvog.PNG.jbbllee/line.png?type=w773"
+        />
+      </div>
+
+      <!-- 소개 네 번째 -->
+      <div id="chi_inNo4">
+        <div>
+          <img
+            src="https://postfiles.pstatic.net/MjAyMTA5MTVfMjg3/MDAxNjMxNjg5MDg0NDEz.WQEjwdLJ76qOyV5zMNAP89fR3eUsVfc1TSykp0h2IZ0g.WIWudvAiXIrYCBP3-sKzcI0UW13sXSlgXizMMkfsxlMg.JPEG.jbbllee/%E3%85%87%E3%85%87%E3%85%87.jpg?type=w773"
+            width="1100px"
+            height="600px"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="ms_adiv">
+      <aside>
+        <!-- 채팅 시스템 레이아웃 시작 -->
+        <input class="jw_butchat" type="button" value="chat system" />
+        <!--  -->
+        <div class="jw_chat" style="visibility: hidden">
+          <div class="jw_chattop">
+            <div class="jw_chath">
+              <p>문의 및 방문예약</p>
+            </div>
+            <input type="button" class="jw_chatout" value="X" />
+          </div>
+          <div class="jw_chatsec"></div>
+          <div class="jw_text">
+            <div class="jw_intext">
+              <input
+                type="text"
+                class="jw_intext1"
+                placeholder="문의사항 입력"
+              />
+            </div>
+            <input type="submit" class="jw_inchat" value="전송" />
+          </div>
+        </div>
+        <!-- 채팅 시스템 레이아웃 끝 -->
+        <!--실시간 상담 및 문의사항 채팅하는 아이콘-->
+        <input class="jw_buttop" type="button" onclick="jw_goTop()" value="↑" />
+      </aside>
+    </div>
+    <footer>
+      <div>
+        <p id="ms_co">솔데스크 주소 : 서울특별시 종로구 관철동 13-13 1014호</p>
+        <p id="ms_co">문의 전화 : 02-1014-1014</p>
+        <p id="ms_co">상담 가능 시간 : 평일 09:00 ~ 18:00</p>
+        <p id="ms_co">© Shin Jiwon. All rights reserved. 2021</p>
+      </div>
+    </footer>
+
+    <script>
+      /* 상단으로 가기 */
+      function jw_goTop() {
+        var n = window.scrollY;
+        var t = setInterval(function () {
+          n -= 20;
+          window.scrollTo(0, n);
+          if (n <= 0) {
+            clearInterval(t);
+          }
+        }, 1);
+      }
+      /* 헤더 메뉴바 */
+      window.onload = function () {
+        $(".hidescroll").hide();
+        /* 채팅 시스템 */ /* 채팅 시스템 */
+        var jw_butchat = document.querySelector(".jw_butchat");
+        var jw_chat = document.querySelector(".jw_chat");
+        var jw_chatout = document.querySelector(".jw_chatout");
+        jw_butchat.addEventListener("click", function () {
+          jw_chat.style.visibility = "visible";
+          jw_butchat.style.visibility = "hidden";
+        });
+        jw_chatout.addEventListener("click", function () {
+          jw_butchat.style.visibility = "visible";
+          jw_chat.style.visibility = "hidden";
+        });
+      };
+      $(function () {
+        $(".menu").on("mouseenter", function () {
+          $(".hidescroll").stop().slideDown();
+        });
+        $("header").on("mouseleave", function () {
+          $(".hidescroll").stop().slideUp();
+        });
+      });
+
+      /* 여기부터 로그인 모달 */
+      /* 로그인 모달 창 스크립트 */
+      function modal(id) {
+        var zIndex = 9999;
+        var modal = document.getElementById(id);
+        var m = modal.style.display;
+
+        // 모달 div 뒤에 희끄무레한 레이어
+        var bg = document.createElement("div");
+        bg.setStyle({
+          position: "fixed",
+          zIndex: zIndex,
+          left: "0px",
+          top: "0px",
+          width: "100%",
+          height: "100%",
+          overflow: "auto",
+          // 레이어 색갈은 여기서 바꾸면 됨
+          backgroundColor: "rgba(0,0,0,0.4)",
+        });
+        document.body.append(bg);
+
+        // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+        modal
+          .querySelector(".be_close_btn")
+          .addEventListener("click", function () {
+            document.getElementById("login-name").value = "";
+            document.getElementById("login-pass").value = "";
+            bg.remove();
+            modal.style.display = "none";
+          });
+
+        modal.setStyle({
+          position: "fixed",
+          display: "block",
+          boxShadow:
+            "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+
+          // 시꺼먼 레이어 보다 한칸 위에 보이기
+          zIndex: zIndex + 1,
+
+          // div center 정렬
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          msTransform: "translate(-50%, -50%)",
+          webkitTransform: "translate(-50%, -50%)",
+        });
+      }
+
+      // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+      Element.prototype.setStyle = function (styles) {
+        for (var k in styles) this.style[k] = styles[k];
+        return this;
+      };
+
+      document
+        .getElementById("popup_open_btn")
+        .addEventListener("click", function () {
+          // 모달창 띄우기
+          modal("be_login_modal");
+        });
+      /* 여기까지 로그인 모달 */
+    </script>
+  </body>
+</html>
