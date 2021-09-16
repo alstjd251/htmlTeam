@@ -16,6 +16,7 @@
     <title>Pet it Pet</title>
     <style>
     </style>
+    <script src="teamJs.js?after"></script>
 </head>
 <body>
     <!-- 여기부터 로그인 -->
@@ -45,9 +46,9 @@
     </div>
     <!-- 여기까지 로그인 -->
     <header>
-    <div class="fheader" onmouseover = "omover()">
+    <div class="fheader">
         <div class="logo">
-            <a href="file:///C:/Users/%EB%AA%A8/Documents/teamHTML.html">
+            <a href="teamHTML.html">
             <img src="https://postfiles.pstatic.net/MjAyMTA5MDhfMjQg/MDAxNjMxMDkxMTM0NjY5.2Han3TSOfF1DXy0qnsAJWuvLN8w6faWVxa-h9wJNBU0g.02Nl9aREoInEJ2Jou2K1FKk_Y6wQ5CW5izOkdQnYIYEg.PNG.jbbllee/loge.png?type=w773"/>
             </a>
         </div>
@@ -64,12 +65,12 @@
         </div>
     </div>
     <!--onmouseover jquery slide-->
-    <div class="hidescroll" onmouseout = "omout()">
+    <div class="hidescroll">
         <div class="hidelogo"></div>
         <div class="hidemenu">
             <div class="hidehome">
-                <a href="file:///C:/Users/%EB%AA%A8/Documents/introPage.html">기관 소개</a>
-                <a href="file:///C:/Users/%EB%AA%A8/Documents/conect.html">입양 절차</a>
+                <a href="introPage.html">기관 소개</a>
+                <a href="conect.html">입양 절차</a>
                 <a href="#">공지사항</a>
             </div>
             <div class="hideshel">
@@ -148,21 +149,21 @@
     <div class="ms_adiv">
         <aside>
             <!-- 채팅 시스템 레이아웃 시작 -->
-            <input class="jw_butchat" type="button" value="chat system" onclick="chat()" />
+            <input class="jw_butchat" type="button" value="chat system"  />
             <!--  -->
-            <div class="jw_chat" style="visibility: hidden;" onclick="chat()">
+            <div class="jw_chat" style="visibility: hidden;" >
                 <div class="jw_chattop">
                     <div class="jw_chath">
                     <p>문의 및 방문예약</p>
                     </div>
-                    <input type="button" class="jw_chatout" onclick="chat()" value="X">
+                    <input type="button" class="jw_chatout"  value="X">
                 </div>
                 <div class="jw_chatsec">
 
                 </div>
                 <div class="jw_text">
-                    <div class="jw_intext"><input type="text" class="jw_intext1" placeholder="문의사항 입력"></div>
-                    <input type="submit" class="jw_inchat" value="전송">
+                    <div class="jw_intext"><input type="text" class="jw_intext1" onkeypress="javascript:if(event.keyCode==13) {chat()}" placeholder="문의사항 입력"></div>
+                    <input type="submit" class="jw_inchat" onclick="chat()" value="전송">
                 </div>
             </div>
             <!-- 채팅 시스템 레이아웃 끝 -->
@@ -178,103 +179,5 @@
             <p id="ms_co">© Shin Jiwon. All rights reserved. 2021</p>
         </div>
     </footer>
-
-    <script>
-        /* 상단으로 가기 */
-        function jw_goTop() {
-            var n = window.scrollY;
-            var t = setInterval(function () {
-                n -= 20;
-                window.scrollTo(0, n);
-                if (n <= 0) {
-                    clearInterval(t);
-                }
-            }, 1);
-        }
-        /* 헤더 메뉴바 */
-        window.onload=function(){
-            $(".hidescroll").hide();
-            /* 채팅 시스템 */
-            var jw_butchat = document.querySelector(".jw_butchat");
-            var jw_chat = document.querySelector(".jw_chat");
-            var jw_chatout = document.querySelector(".jw_chatout");
-            jw_butchat.addEventListener("click",function() {
-                jw_chat.style.visibility = "visible";
-                jw_butchat.style.visibility = "hidden";
-            });
-            jw_chatout.addEventListener("click", function() {
-                jw_butchat.style.visibility = "visible";
-                jw_chat.style.visibility = "hidden";
-            });
-    
-        }
-        $(function () {
-            $(".menu").on("mouseenter", function () {
-                $(".hidescroll").stop().slideDown();
-            },);
-            $("header").on("mouseleave", function () {
-                $(".hidescroll").stop().slideUp();
-            });
-        });
-    
-        /* 여기부터 로그인 모달 */
-        /* 로그인 모달 창 스크립트 */
-        function modal(id) {
-                var zIndex = 9999;
-                var modal = document.getElementById(id);
-                var m = modal.style.display;
-    
-                // 모달 div 뒤에 희끄무레한 레이어
-                var bg = document.createElement('div');
-                bg.setStyle({
-                    position: 'fixed',
-                    zIndex: zIndex,
-                    left: '0px',
-                    top: '0px',
-                    width: '100%',
-                    height: '100%',
-                    overflow: 'auto',
-                    // 레이어 색갈은 여기서 바꾸면 됨
-                    backgroundColor: 'rgba(0,0,0,0.4)'
-                });
-                document.body.append(bg);
-    
-                // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
-                modal.querySelector('.be_close_btn').addEventListener('click', function() {
-                    document.getElementById("login-name").value="";
-                    document.getElementById("login-pass").value="";
-                    bg.remove();
-                    modal.style.display = 'none';
-                });
-                
-                modal.setStyle({
-                    position: 'fixed',
-                    display: 'block',
-                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-    
-                    // 시꺼먼 레이어 보다 한칸 위에 보이기
-                    zIndex: zIndex + 1,
-    
-                    // div center 정렬
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    msTransform: 'translate(-50%, -50%)',
-                    webkitTransform: 'translate(-50%, -50%)'
-                });
-            }
-    
-            // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
-            Element.prototype.setStyle = function(styles) {
-                for (var k in styles) this.style[k] = styles[k];
-                return this;
-            };
-    
-            document.getElementById('popup_open_btn').addEventListener('click', function() {
-                // 모달창 띄우기
-                modal('be_login_modal');
-            });
-            /* 여기까지 로그인 모달 */
-    </script>
 	</body>
 </html>
