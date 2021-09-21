@@ -6,7 +6,7 @@
             window.scrollTo(0, n);
             if (n <= 0) {
                 clearInterval(t);
-            }
+            } //없으면 아래로 내리는거 X
             }, 1);
         }
         /* 헤더 메뉴바 */
@@ -98,7 +98,7 @@
             if(chat.value !=""){
                 var chatn = document.createElement("div");
                 var chatns = document.createElement("span");
-                chatn.appendChild(chatns);
+                chatn.appendChild(chatns);// 동적생성
                 chatns.innerHTML=chat.value;
                 chatn.setAttribute("class","cus");
                 chatns.setAttribute("class","cuss");
@@ -113,10 +113,10 @@
                     cssp.setAttribute("class","css");
                     cs.appendChild(cssp);
                     textsec.appendChild(cs);
-                    $('.jw_chatsec').stop().animate({ scrollTop: $('.jw_chatsec')[0].scrollHeight }, 1000);
-                },1000);
-
-                $('.jw_chatsec').stop().animate({ scrollTop: $('.jw_chatsec')[0].scrollHeight }, 1000);
+                     },1000);
+                     //채팅 많아지면 스크롤 추가되는 쿼리
+                $('.jw_chatsec').stop().animate({ scrollTop: $('.jw_chatsec')[0].scrollHeight }, 1000);  $('.jw_chatsec').stop().animate({ scrollTop: $('.jw_chatsec')[0].scrollHeight }, 1000);
+             
             }else{
                 return false;
             }

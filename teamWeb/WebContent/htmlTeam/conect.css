@@ -294,7 +294,7 @@
   .be_close_btn:hover {
     cursor: pointer;
   }
-  /* 채팅시스템 css */
+ /* 채팅시스템 css */
 .jw_chat {
   position: fixed;
   right: 24px;
@@ -332,12 +332,39 @@
   cursor: pointer;
 }
 .jw_chat .jw_chatsec {
-  width: 250px;
+  /* width 260 수정 */
+  width: 260px;
   height: 330px;
-  background-color: blueviolet;
+  background-color: fffff0;
   margin-left: 15px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  overflow-y: auto;
+}
+.jw_chat .jw_chatsec .cus {
+  /* margin-right 5px 추가 */
+  width: 80%;
+  float: right;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+.jw_chat .jw_chatsec .cus .cuss {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3px;
+  float: right;
+}
+.jw_chat .jw_chatsec .cs {
+  width: 80%;
+  float: left;
+  margin-bottom: 8px;
+}
+.jw_chat .jw_chatsec .cs .css {
+  background-color: lightpink;
+  border: 1px dotted black;
+  border-radius: 10px;
+  padding: 3px;
+  float: left;
 }
 .jw_chat .jw_text {
   display: flex;
@@ -355,7 +382,7 @@
   margin-left: 10px;
   font-size: 15px;
   border-radius: 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid black;
 }
 .jw_chat .jw_text .jw_inchat {
   width: 50px;

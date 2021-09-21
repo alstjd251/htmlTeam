@@ -9,27 +9,31 @@
 .chi_inTitle{
     text-align: center;
   }
-
+#chi_bold{
+    font-weight: bold;
+    font-size: 1.2em;
+}
 #chi_No01 #chi_no01_01{/* 설명 */
     vertical-align: bottom; /* 문장 밑으로 붙이기 */
     text-align: left;
-    border-left : 10px solid wheat;
-
+    padding-left: 1em;
 }
 #chi_No01 #chi_No01_jw {
-    border-left: 10px solid wheat;
+    border-left: 10px solid rgb(205, 172, 127);
     height: 200px;
     display: flex;
     align-items: center;
   }
-
-#chi_No02 #chi_no02_02{/* 설명 */
+#chi_inDiv02 div p{
+    line-height: 1.7em;
+}
+#chi_No02 #chi_no02_02{/* 설명 */ 
     text-align: right;
-    border-right: 10px solid wheat;
     vertical-align: bottom;
+    padding-right: 1em;
 }
 #chi_No02 #chi_No02_jw {
-  border-right: 10px solid wheat;
+  border-right: 10px solid rgb(205, 172, 127);
   height: 200px;
   display: flex;
   align-items: center;
@@ -37,11 +41,11 @@
 
 #chi_No03 #chi_no03_01{/* 설명 */
     text-align: left;
-    border-left : 10px solid wheat;
     vertical-align: bottom;
+    padding-left: 1em;
 }
 #chi_No03 #chi_No03_jw {
-    border-left: 10px solid wheat;
+    border-left: 10px solid rgb(205, 172, 127);
     height: 200px;
     display: flex;
     align-items: center;
@@ -81,32 +85,36 @@
 .chi_inNo3 #chi_pad{
     margin-top: 20px;
 }
-.chi_inNo3 #no3_01{
+/* .chi_inNo3 #no3_01{
     width: 200px;
     height: 300px;
     border-radius: 70%;
-}
+} */
 .chi_inNo3 #no3_02{
     width: 200px;
     height: 300px;
     border-radius: 70%;
+    margin: 10px;
+
 }
 .chi_inNo3 #no3_03{
     width: 200px;
     height: 300px;
     border-radius: 70%;
+    margin: 10px;
 }
 .chi_inNo3 #no3_04{
     width: 200px;
     height: 300px;
     border-radius: 70%;
+    margin: 10px;
 }
-.chi_inNo3 #no3_05{
+/* .chi_inNo3 #no3_05{
     display: inline-block;
     width: 200px;
     height: 300px;
     border-radius: 70%;
-}
+} */
 
 .chi_bottom{
     padding: 50%;
@@ -126,4 +134,3 @@ height: 100px;
     width:100%;
     height:auto;
 }
-
